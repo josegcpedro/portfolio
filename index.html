@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio José Gomes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+
+    <aside class="fixed left-12 top-1/3 flex flex-col gap-6 z-50 mr-8">
+        <a href="https://github.com/josegcpedro" target="_blank" class="hover:scale-110 transition-transform">
+            <img src="img/image.png" alt="GitHub" class="w-8 h-8">
+        </a>
+        <a href="https://www.linkedin.com/in/jos%C3%A9-gomes-865b2b31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank" class="hover:scale-110 transition-transform">
+            <img src="img/linkediin.png" alt="LinkedIn" class="w-8 h-8">
+        </a>
+        <a href="https://www.instagram.com/jose.pedro_2005/?utm_source=qr" target="_blank" class="hover:scale-110 transition-transform">
+            <img src="img/insta.webp" alt="Instagram" class="w-8 h-8">
+        </a>
+    </aside>
+
+    </aside>
+
+    <!-- HEADER / NAV -->
+    <header class="fixed w-full bg-gray-800/80 backdrop-blur-md z-50">
+        <nav class="max-w-6xl mx-auto flex justify-center items-center p-4">
+            <ul class="flex gap-12">
+                <li><a href="#hero" class="nav-link hover:text-blue-400 transition-colors">Accueil</a></li>
+                <li><a href="#projects" class="nav-link hover:text-blue-400 transition-colors">Projets</a></li>
+                <li><a href="#skills" class="nav-link hover:text-blue-400 transition-colors">Compétences</a></li>
+                <li><a href="#contact" class="nav-link hover:text-blue-400 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="hero"
+        class="h-screen flex flex-col md:flex-row justify-center items-center pl-32 md:pl-36 px-12 md:px-24 gap-12">
+        <!-- Texte à gauche -->
+        <div class="flex-1 pr-8 flex flex-col justify-center">
+            <h1
+                class="text-5xl md:text-6xl font-bold text-blue-400 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-blue-400 pr-2">
+                Salut, je suis José Gomes</h1>
+            <a href="#projects"
+                class="mt-5 inline-block text-blue-400 border-2 border-blue-400 px-6 py-2 rounded-full font-semibold hover:bg-blue-400 hover:text-gray-900 transition-colors">Voir
+                mes projets</a>
+        </div>
+
+        <!-- Image à droite -->
+        <div class="flex-1 flex justify-center items-center">
+            <img src="img/moi.png" alt="Moi"
+                class="w-80 h-80 md:w-96 md:h-96 rounded-full border-4 border-blue-400 shadow-lg object-cover">
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-24 bg-gray-900">
+        <h2 class="text-3xl font-bold text-center text-blue-400 mb-12">Mes Projets</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div
+                class="bg-gray-700 p-6 rounded-lg shadow hover:scale-105 transition-transform flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Safe Wallet</h3>
+                    <p class="text-gray-300 mb-4">Une application mobile en React Native où l'utilisateur peut contrôler
+                        ses dépenses grâce à des graphiques intuitifs et user-friendly.</p>
+                </div>
+                <a href="https://github.com/josegcpedro" target="_blank"
+                    class="text-blue-400 font-bold hover:underline mt-4">Voir sur GitHub</a>
+            </div>
+
+            <div
+                class="bg-gray-700 p-6 rounded-lg shadow hover:scale-105 transition-transform flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Speak4All</h3>
+                    <p class="text-gray-300 mb-4">Un chat permettant aux utilisateurs de communiquer facilement entre
+                        eux.</p>
+                </div>
+                <a href="https://github.com/josegcpedro" target="_blank"
+                    class="text-blue-400 font-bold hover:underline mt-4">Voir sur GitHub</a>
+            </div>
+
+            <div
+                class="bg-gray-700 p-6 rounded-lg shadow hover:scale-105 transition-transform flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Weather API</h3>
+                    <p class="text-gray-300 mb-4">Une application faite en Angular où l'utilisateur peut chercher une
+                        ville et obtenir la météo actuelle.</p>
+                </div>
+                <a href="https://github.com/josegcpedro/weatherApi" target="_blank"
+                    class="text-blue-400 font-bold hover:underline mt-4">Voir sur GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SKILLS / LANGUAGES SECTION -->
+    <section id="skills" class="py-24 bg-gray-900">
+        <h2 class="text-3xl font-bold text-center text-blue-400 mb-12">Mes Compétences</h2>
+        <div class="max-w-4xl mx-auto space-y-6 px-4">
+
+            <!-- React -->
+            <div>
+                <div class="flex justify-between mb-1">
+                    <span class="text-white font-semibold">React</span>
+                    <span class="text-gray-300 font-medium">40%</span>
+                </div>
+                <div class="w-full bg-gray-600 rounded-full h-4">
+                    <div class="bg-blue-400 h-4 rounded-full" style="width: 40%;"></div>
+                </div>
+            </div>
+
+            <!-- Angular -->
+            <div>
+                <div class="flex justify-between mb-1">
+                    <span class="text-white font-semibold">Angular</span>
+                    <span class="text-gray-300 font-medium">65%</span>
+                </div>
+                <div class="w-full bg-gray-600 rounded-full h-4">
+                    <div class="bg-blue-400 h-4 rounded-full" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <!-- React Native -->
+            <div>
+                <div class="flex justify-between mb-1">
+                    <span class="text-white font-semibold">React Native</span>
+                    <span class="text-gray-300 font-medium">50%</span>
+                </div>
+                <div class="w-full bg-gray-600 rounded-full h-4">
+                    <div class="bg-blue-400 h-4 rounded-full" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <!-- HTML -->
+            <div>
+                <div class="flex justify-between mb-1">
+                    <span class="text-white font-semibold">HTML</span>
+                    <span class="text-gray-300 font-medium">95%</span>
+                </div>
+                <div class="w-full bg-gray-600 rounded-full h-4">
+                    <div class="bg-blue-400 h-4 rounded-full" style="width: 95%;"></div>
+                </div>
+            </div>
+
+            <!-- CSS -->
+            <div>
+                <div class="flex justify-between mb-1">
+                    <span class="text-white font-semibold">CSS / Tailwind</span>
+                    <span class="text-gray-300 font-medium">75%</span>
+                </div>
+                <div class="w-full bg-gray-600 rounded-full h-4">
+                    <div class="bg-blue-400 h-4 rounded-full" style="width: 75%;"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-gray-900 text-center">
+        <h2 class="text-3xl font-bold text-blue-400 mb-6">Contact</h2>
+        <p class="mb-2"><a href="mailto:tonmail@example.com"
+                class="text-blue-400 hover:underline">pedrojcunha7@hotmail.com</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
